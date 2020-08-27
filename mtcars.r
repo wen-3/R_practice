@@ -29,7 +29,7 @@ scatter.smooth(x = vs, y = mpg,main = "mpg ~ vs")
 par(mfrow=c(2,2))
 boxplot(mpg, main="mpg", 
         sub=paste("Outlier rows: ", 
-                                    paste(boxplot.stats(mpg)$out, collapse = ",")))
+                  paste(boxplot.stats(mpg)$out, collapse = ",")))
 
 boxplot(wt, main="wt", 
         sub=paste("Outlier rows: ", 
